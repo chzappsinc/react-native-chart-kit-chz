@@ -1,4 +1,4 @@
 $pod:
   arch: arch -x86_64 pod install
   int: pod install
-run: yarn add mash-charts@latest && cd ios && $pod && cd ..
+run: yarn add react-native-chart-kit-chz@latest && cd ios && $pod && cd ..
