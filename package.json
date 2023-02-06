@@ -1,0 +1,37 @@
+{
+  "name": "react-native-chart-kit-chz",
+  "title": "React Native Chart Kit",
+  "version": "1.0.4",
+  "description": "React Native Chart Kit with Line Charts, Pie Charts and more",
+  "main": "index.ts",
+  "files": [
+    "README.md",
+    "index.ts",
+    "index.d.ts",
+    "src",
+    "dist",
+    ".lock",
+    ".yrc",
+    "AUTHORS"
+  ],
+  "keywords": [
+    "react-native-pie-chart",
+    "react native line chart with tool tip",
+    "react-native-chart"
+  ],
+  "scripts": {
+    "test": "jest --no-coverage",
+    "lint": "lint --use-x",
+    "yrc": "yrc --use=.yrc"
+  },
+  "author": "Jasim T k",
+  "license": "MIT",
+  "dependencies": {
+    "d3-shape": "1.0.6",
+    "react-native-funnel-chart": "^1.1.5"
+  },
+  "devDependencies": {
+    "react": "^16.9.0",
+    "react-native": "^0.61.5"
+  }
+}
