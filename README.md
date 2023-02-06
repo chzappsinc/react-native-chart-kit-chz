@@ -1,7 +1,10 @@
 # React Native Chart Kit Chz
 
 **Developed By [Chzapps India](https://chzapps.com)**
+
 *More Charts are adding soon!*
+
+*Any Changes?* [Here](/PR/)
 
 
 <!--<a><img src="https://iili.io/H1tndyQ.md.png" alt="H1" border="0"></a>
