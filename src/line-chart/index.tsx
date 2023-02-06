@@ -347,7 +347,7 @@ const LineChart = (props: LineChartProps) => {
 
   //Line Points Bezier
   const getBezierLinePoints = (dataset: any, config: any) => {
-    const { width, height, paddingRight, paddingTop, data } = config;
+    const { width, height, paddingRight, paddingTop } = config;
     if (dataset.data.length === 0) {
       return "M0,0";
     }

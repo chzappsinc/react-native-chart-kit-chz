@@ -1,7 +1,7 @@
 {
   "name": "react-native-chart-kit-chz",
   "title": "React Native Chart Kit",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "React Native Chart Kit with Line Charts, Pie Charts and more",
   "main": "index.ts",
   "files": [
