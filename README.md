@@ -1,6 +1,8 @@
 # React Native Chart Kit Chz
 
 **Developed By [Chzapps India](https://chzapps.com)**
+*More Charts are adding soon!*
+
 
 <!--<a><img src="https://iili.io/H1tndyQ.md.png" alt="H1" border="0"></a>
 <a>-->
@@ -14,6 +16,7 @@ yarn add react-native-chart-kit-chz
 
 ## charts 
 - [Line Chart](#line-chart)
+- [Donut Chart](#donut-chart)
 - [Pie Chart](#pie-chart)
 - [Funnel Chart](#funnel-chart)
 
@@ -29,15 +32,16 @@ import {LineChart} from "react-native-chart-kit-chz"
 ```js
 <LineChart
   data={{
-    labels: ["Jan", "Feb", "Mar", "April", "June", "July", "Aug"],
+    labels: ["Jan", "Feb", "Mar", "April", "June", "July", "Aug"], // Bottom Labels
     datasets: [
       {
-        data: [10.47, 25.6, 11.4, 19.5, 8.9, 30.9, 55.9],
-        amount: [5093995050, 283893, 382389, 80909, 48908, 893022, 2839090],
-        color: "#000531",
-        currency: "USD",
-        id: 1,
+        data: [10.47, 25.6, 11.4, 19.5, 8.9, 30.9, 55.9], // Data for Chart 
+        amount: [5093995050, 283893, 382389, 80909, 48908, 893022, 2839090], //Amount show on the ToolTip
+        color: "#000531", // Chart Line Color
+        currency: "USD", //Currency to show before amount , 
+        id: 1, //ID
       },
+      //You can add another set here with different data
     ],
   }}
   onPointPress={(d: any) => {
@@ -51,14 +55,14 @@ import {LineChart} from "react-native-chart-kit-chz"
     color: `#000531`,
     // fontFamily: "",
   }}
-  bezier
+  bezier //Command this for stright line chart
   style={{
     marginVertical: 30,
   }}
 />;
 ```
 
-### Pie Chart
+### Donut Chart
 <a><img height="200" src="https://iili.io/H1DAOox.png" alt="H1DAOox.png" border="0"></a>
 <a><img height="200" src="https://iili.io/H1DAeMQ.png" alt="H1DAeMQ.png" border="0"></a>
 
@@ -91,6 +95,43 @@ import {PieChart} from "react-native-chart-kit-chz"
      style={{width: 320, height: 320}}
      items={chartData}
      innerRadius={50}
+     outerRadius={65}
+     padAngle={0}}
+     />
+```
+
+### Pie Chart
+<a><img height="200" src="https://iili.io/H1Dabu1.png" alt="8.png" border="0"></a>
+
+**Note** : Label need to be created from your end [Example](/example/pie-label.md)
+
+```js
+import {PieChart} from "react-native-chart-kit-chz"
+```
+
+```js
+
+  const chartData = [
+    {
+      key: 1,
+      value: 100,
+      svg: {fill: '#000'},
+      arc: {cornerRadius: 0},
+      label: 'Cplex',
+    },
+    {
+      key: 2,
+      value: 178,
+      svg: {fill: '#902'},
+      arc: {cornerRadius: 0},
+      label: 'Jsum',
+    },
+  ];
+
+   <PieChart
+     style={{width: 320, height: 320}}
+     items={chartData}
+     innerRadius={0}
      outerRadius={65}
      padAngle={0}}
      />
